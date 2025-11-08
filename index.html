@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>유나의 작업실</title>
-    <script type="module" src="./tags/privatetag.js"></script>
+    <script type="module" src="/tags/private-tag.js"></script>
     <style>
         body {
             font-family: "Pretendard", sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            /* 
+            https://bty2022.tistory.com/entry/%EB%B8%94%EB%A1%9C%EA%B7%B8-tip
+            */
+            color: #444444;
             max-width: 700px;
             margin: 40px auto;
+            padding: 40px;
             line-height: 1.8;
         }
 
@@ -23,14 +26,13 @@
         }
 
         h3 {
-            color: #8d8d8d;
             padding-bottom: 4px;
             margin-top: 40px;
             margin-bottom: 5px;
         }
 
         a {
-            color: #04beb8;
+            color: #444444;
             text-decoration: none;
         }
 
@@ -46,27 +48,54 @@
         li {
             margin: 6px 0;
         }
+
+        .clickable {
+            cursor: pointer;
+            transition: background-color .2s ease-in-out;
+        }
+
+        .chipletContainerInner {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 20px;
+            min-height: 10px;
+            background-color: #6C7A89;
+            border-radius: 4px;
+            line-height: 16px;
+            padding: 0 4px;
+            vertical-align: middle;
+            font-size: 60%;
+            color: #ffffff;
+        }
+
+        .chipletContainerInner:hover {
+            background-color: #A3C6C4;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1>세상에 하나밖에 없는<br>소중하고 위대한 유나의 작업실</h1>
+    <h1>세상에 하나밖에 없는<br>소중하고 위대한 <span style="background-color: #FFC0CB;">유나</span>의 작업실</h1>
     
-    <h2>잡동사니</h2>
+    <h2><span style="background-color: #B0E0E6;">잡동사니</span></h2>
     <ul>
         <li><a href="https://docs.google.com/spreadsheets/d/1SAEi2F9Z9AqqA-1pr4kvveJpU9HUFwKD1ZTDMBhkTcM/edit?gid=1321148318#gid=1321148318"
                 target="_blank">가계부</a>
-            <privatetag></privatetag>
+            <span class="chipletContainerInner clickable">비공개</span>
         </li>
     </ul>
 
-    <h2>학사</h2>
+    <h2><span style="background-color: #e7d16c;">학사</span></h2>
     <ul>
         <li><a href="https://drive.google.com/drive/folders/1FrE1HCtOPRzchVpcQ1TPpD7D2x-ytyDO" target="_blank">드라이브</a>
+            <span class="chipletContainerInner clickable">비공개</span>
         </li>
         <li><a href="https://docs.google.com/spreadsheets/d/1OwFSSgb_zDD5-15ZyvELyJg50GXAU6gjq70BDdb-P7U/edit?gid=0#gid=0"
-                target="_blank">2학사 대작전</a></li>
+                target="_blank">2학사 대작전</a>
+            <span class="chipletContainerInner clickable">비공개</span>
+        </li>
         <li><a href="https://gall.dcinside.com/board/view/?id=acbs&no=214500" target="_blank">공략1</a></li>
         <li><a href="https://m.blog.naver.com/PostView.naver?blogId=jiniplace&logNo=223387488662"
                 target="_blank">공략2</a></li>
@@ -75,30 +104,32 @@
         <li><a href="https://www.sdedu.co.kr/popkon/?f=free_list_new" target="_blank">시대에듀</a></li>
     </ul>
 
-    <h2>테트리스</h2>
+    <h2><span style="background-color: #d697d6;">테트리스</span></h2>
     <ul>
         <li><a href="https://tetr.io/" target="_blank">공홈</a></li>
         <li><a href="https://hse30.tistory.com/73" target="_blank">공략집</a></li>
         <li><a href="./tetris_configs/config_251108.ttc" download>설정파일 다운로드</a></li>
     </ul>
     
-    <h2>엘소드</h2>
+    <h2><span style="background-color: #c53535; color: whitesmoke;">엘소드</span></h2>
     <ul>
-        <h3>>_@</h3>
+        <h3><span style="background-color: #e79191;">>>_@</span></h3>
         <li><a href="https://elsword.nexon.com/" target="_blank">공홈</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1f3jOjNvRJOvYEo5dHfyRrna7CohOB2HORc5pBan2gEQ/edit?gid=0#gid=0"
-                target="_blank">엘쏘드 시트</a></li>
+                target="_blank">엘쏘드 시트</a>
+            <span class="chipletContainerInner clickable">비공개</span>
+        </li>
         <li><a href="https://docs.google.com/spreadsheets/d/1FfOJd72_ckjNWOTdmKZ81oBOFkBLen4Vy5imAotc5C0/edit?usp=sharing"
                 target="_blank">엘쏘드 시트 (배포용)</a></li>
-        <h3>정보글</h3>
+        <h3><span style="background-color: #e79191;">정보글</span></h3>
         <li><a href="https://gall.dcinside.com/mgallery/board/view/?id=els&no=892522" target="_blank">만크극</a></li>
         <li><a href="https://namu.wiki/w/%EC%97%98%EC%86%8C%EB%93%9C/%EB%A0%88%EC%9D%B4%EB%93%9C/%EC%8B%9C%EB%84%88%EC%A7%80"
-                target="_blank">엘소드 레이드 시너지</a></li>
-        <h3>유튜브 공략</h3>
-        <li><a href="https://www.youtube.com/watch?v=8jx-Aj7svgc" target="_blank">둠레 공략 유튜브</a></li>
-        <li><a href="https://www.youtube.com/watch?v=XPMyCGtQv6E" target="_blank">도쏘 공략 유튜브</a></li>
-        <li><a href="https://www.youtube.com/watch?v=_51POBkqyBU" target="_blank">도르릉 공략 유튜브</a></li>
-        <h3>제정신아닌척하기</h3>
+                target="_blank">레이드 시너지</a></li>
+        <h3><span style="background-color: #e79191;">유튜브 공략</span></h3>
+        <li><a href="https://www.youtube.com/watch?v=8jx-Aj7svgc" target="_blank">둠레</a></li>
+        <li><a href="https://www.youtube.com/watch?v=XPMyCGtQv6E" target="_blank">도쏘</a></li>
+        <li><a href="https://www.youtube.com/watch?v=_51POBkqyBU" target="_blank">도르릉</a></li>
+        <h3><span style="background-color: #e79191;">제정신아닌척하기</span></h3>
         <li><a href="https://gall.dcinside.com/mgallery/board/view/?id=els&no=9717" target="_blank">정신나간</a></li>
     </ul>
 
